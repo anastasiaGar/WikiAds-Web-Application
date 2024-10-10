@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #d5d0d0;
+  color: #01421c;
+}
+
+header {
+  background-color: #144432;
+  color: #c8b4b4;
+  padding: 3%;
+  display: grid;
+  grid-area: header;
+  justify-content: space-between;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2%;
+  align-items: left;
+}
+
+header img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.hecontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-menu {
+  background-color: #144432;
+  color: #c8b4b4;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.top-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.informationdata {
+  padding: 20px;
+}
+
+.footer-content {
+  background-color: #2e3741;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.navigation-sidebar {
+  width: 200px;
+  float: left;
+}
+
+.navigation ol {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li {
+  margin-bottom: 10px;
+}
+
+nav {
+  grid-area: nav;
+  background-image: #3f556d;
+  color: white;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 100%;
+}
+
+nav li {
+  list-style-type: none;
+  line-height: 2em;
+  text-align: left;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c8b4b4;
+  font-weight: bold;
+  font-size: large;
+}
+
+nav a:hover {
+  color: rgb(177, 144, 255);
+  transition: background-color 400ms ease-in;
+}
+
+nav li:hover {
+  position: relative;
+  top: 2px;
+}
+
+/* Style the main container */
+.informationdata h2 {
+  color: #004f1a;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.subcategories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subcategories p {
+  margin: 0;
+  padding: 5px;
+  background-color: #2e3741;
+  color: #ffffff;
+}
+
+.subcategories a {
+  text-decoration: none;
+  color: #333;
+}
+
+.informationdata {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Style each category box */
+.info {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  width: calc(90% - 200px); /* Adjust the width as needed */
+  background-color: #e0cece;
+}
+
+/* Style the category title */
+.info h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+/* Style the category image */
+.info img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Style the subcategories */
+.subcategories {
+  margin-top: 10px;
+}
+
+.subcategories a {
+  display: block;
+  padding: 5px;
+  background-color: #676767;
+  color: #2d0000;
+  text-decoration: none;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.subcategories a:hover {
+  background-color: #a9788b; /* Darker color on hover */
+}
+
+/* Style the Category */
+#adverts-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Style each ad container */
+.ad-container {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  width: calc(50% - 100px); /* Adjust the width as needed */
+  background-color: #e0cece;
+}
+
+/* Style the ad title */
+.ad-container h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+/* Style the ad description */
+.ad-container p {
+  margin: 0;
+}
+
+/* Style the ad price */
+.ad-container p:nth-child(3) {
+  margin-top: 10px;
+}
+
+/* Style the ad image */
+.ad-container img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Style the subcategory section */
+#adverts-main h2 {
+  color: #004f1a;
+  margin-bottom: 20px;
+  font-size: 30px; /* Adjust the font size as needed */
+}
+
+/* Style the subcategory container */
+.ad {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  width: calc(50% - 100px); /* Adjust the width as needed */
+  background-color: #e0cece;
+}
+
+/* Style the subcategory title */
+.ad h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+/* Style the subcategory description */
+.ad p {
+  margin: 0;
+}
+
+/* Style the subcategory price */
+.ad p:nth-child(3) {
+  margin-top: 10px;
+}
+
+/* Style the subcategory images container with horizontal scroll */
+.ad .ad-images {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scroll */
+  margin-top: 10px;
+}
+
+/* Style the subcategory images */
+.ad .ad-images img {
+  max-width: 100px; /* Set a fixed width for each image */
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px; /* Add some space between images */
+}
+
+/* Style the subcategory features table */
+.features-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.features-table td {
+  padding: 5px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Style the subcategory features table headers */
+.features-table td:first-child {
+  font-weight: bold;
+  background-color: #c8b4b4;
+  color: #000000;
+}
